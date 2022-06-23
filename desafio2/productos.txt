@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Mouse",
+    "price": 2500,
+    "stock": 10,
+    "thumbnail": "https://cdn.pixabay.com/photo/2013/07/12/17/41/computer-mouse-152249_1280.png",
+    "id": 1
+  },
+  {
+    "title": "Teclado",
+    "price": 3000,
+    "stock": 10,
+    "thumbnail": "https://cdn.pixabay.com/photo/2016/05/23/05/48/keyboard-1409743_1280.png",
+    "id": 2
+  },
+  {
+    "title": "Monitor",
+    "price": 5000,
+    "stock": 10,
+    "thumbnail": "https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_1280.png",
+    "id": 3
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "async-json-parse": "^1.0.3",
+    "raji": "^0.1.6"
+  }
+}
