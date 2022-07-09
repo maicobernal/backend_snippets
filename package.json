@@ -1,6 +1,25 @@
 {
   "dependencies": {
-    "async-json-parse": "^1.0.3",
-    "raji": "^0.1.6"
-  }
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "nodemon": "^2.0.18"
+  },
+  "name": "backend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maicobernal/backend_ch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maicobernal/backend_ch/issues"
+  },
+  "homepage": "https://github.com/maicobernal/backend_ch#readme"
 }
