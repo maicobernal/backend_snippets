@@ -13,7 +13,7 @@ let stock = new Contenedor('productos.txt');
 router.get("/visualizar", async (req, res) => {
     try {
         const productos = await stock.getAll();
-        res.render('visualizar.pug',{nombre: productos[0].title, precio: productos[0].price, imagen: productos[0].thumbnail})
+        res.render('visualizar.pug',{productos})
     } catch (err) {
         res.status(500).send('Error en el proceso GET :' + err)
     }

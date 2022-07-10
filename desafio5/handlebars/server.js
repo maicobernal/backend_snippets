@@ -19,6 +19,14 @@ const productos = require('./productos.js')
 app.use(express.static('public'));
 app.use ('/api/productos', productos)
 
+app.get("/",(req, res) => {
+    try {
+        res.render('./construccion.hbs')
+    } catch (err) {
+        res.status(500).send('Error en el proceso GET :' + err)
+    }
+}) 
+
 const port = 8080
 const server = app.listen(port,()=>{
         console.log('Servidor corriendo en el puerto: ' + server.address().port)

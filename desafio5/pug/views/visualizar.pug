@@ -42,19 +42,24 @@ html(lang='en')
 
       h2.center.h__md Stock de productos disponibles
 
-        .table-responsive
-          table.table.table-sm.table-hover.table-striped
-            thead.t-head-light
-              tr.p__md--strong.center
-                th Nombre
-                th Precio
-                th Foto
-            tbody.center
-              tr
-                td=nombre
-                td=precio
-                td
-                  img(src=imagen width='50' height='50')
+        #vertabla
+        if productos
+          .table-responsive
+            table.table.table-sm.table-hover.table-striped
+              thead.t-head-light
+                tr.p__md--strong.center
+                  th Nombre
+                  th Precio
+                  th Foto
+              tbody.center
+              for producto in productos
+                  tr
+                    td=producto.title
+                    td=producto.price
+                    td
+                      img(src=producto.thumbnail width='50' height='50')
+        else 
+          h2.center.h__md No hay productos disponibles
 
     aside
       h2.h__md Noticias varias
